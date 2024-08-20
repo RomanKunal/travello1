@@ -1,5 +1,5 @@
 {%load static%}
-{% static "images" as baseUrl%}
+{% static "images" as baseUrl%}	
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -248,22 +248,22 @@
 			<div class="row destinations_row">
 				<div class="col">
 					<div class="destinations_container item_grid">
-						<!--{%for dests in data%}-->
+						{%for dest in data%}
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{{baseUrl}}/{{dest1.img}}" alt="">
+								<img src="{{baseUrl}}/{{dest.img}}" alt="">
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">{{dest1.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest1.desc}}</p></div>
-								<div class="destination_price">{{dest1.price}}</div>
+								<div class="destination_title"><a href="destinations.html">{{dest.name}}</a></div>
+								<div class="destination_subtitle"><p>{{dest.desc}}</p></div>
+								<div class="destination_price">{{dest.price}}</div>
 							</div>
 						</div>
-						<!--{% endfor %}-->
+						{% endfor %}
 						<!-- Destination -->
-						<div class="destination item">
+						{% comment %} <div class="destination item">
 							<div class="destination_image">
 								<img src="{% static 'images/destination_2.jpg'%}" alt="">
 							</div>
@@ -272,10 +272,10 @@
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 
 						<!-- Destination -->
-						<div class="destination item">
+						{% comment %} <div class="destination item">
 							<div class="destination_image">
 								<img src="{% static 'images/destination_3.jpg'%}" alt="">
 							</div>
@@ -284,10 +284,10 @@
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 
 						<!-- Destination -->
-						<div class="destination item">
+						{% comment %} <div class="destination item">
 							<div class="destination_image">
 								<img src="{% static 'images/destination_4.jpg'%}" alt="">
 							</div>
@@ -296,10 +296,10 @@
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 
 						<!-- Destination -->
-						<div class="destination item">
+						{% comment %} <div class="destination item">
 							<div class="destination_image">
 								<img src="{% static 'images/destination_5.jpg'%}" alt="">
 							</div>
@@ -308,10 +308,10 @@
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 
 						<!-- Destination -->
-						<div class="destination item">
+						{% comment %} <div class="destination item">
 							<div class="destination_image">
 								<img src="{% static 'images/destination_6.jpg'%} " alt="">
 							</div>
@@ -320,7 +320,7 @@
 								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
 								<div class="destination_price">From $679</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 
 					</div>
 				</div>
